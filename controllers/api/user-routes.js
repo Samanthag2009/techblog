@@ -25,19 +25,19 @@ router.post('/', async (req, res) => {
 
 //post request for logging in
 router.post('/login', async (req, res) => {
-     try { const returningUser = await User.findOne ({
+     try { const user = await User.findOne ({
         where: {
             username: req.body.username,
             password: req.body.password,
         }
     });
     
-        if (!returningUser) {
+        if (!user) {
         res.status(404).json({message: "User not found!"});
         return;
         }
 
-        const userPassword = returningUser.validatePassword(req.body.password);
+        const userPassword = user.validatePassword(req.body.password);
 
         if (!userPassword){
         res.status(404).json({message: "Password not validated!"});

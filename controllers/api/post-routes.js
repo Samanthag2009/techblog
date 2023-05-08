@@ -14,9 +14,30 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
-//update blog posts
+//update blog posts (logged in users only) by id
 router.put('/:id', withAuth, async (req, res) => {
-    
+    try {
+        const [affectedItems] = Post.update({
+            where: {
+                id: req.params.id
+            }
+        });
+    } catch (error) {
+        res.status(500).json(error);
+    }
 });
 
-//delete blog posts
+//delete blog posts by the id
+router.delete('/:id', withAuth, async (req, res) => {
+    try {
+        const [affectedItems] = Post.destroy({
+            where: {
+                id: req.params.id
+            }
+        });
+    } catch (error) {
+        res.status(500).json(error);
+    }
+});
+
+module.exports = router;
