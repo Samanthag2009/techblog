@@ -59,3 +59,9 @@ Readme Template
 
 Tutorial for understanding session in node
 * [productioncoder](https://www.youtube.com/watch?v=bvQah0k5-eA&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2)
+
+Reference for route syntax
+* [jakekelly44](https://github.com/jakekelly44/tech-blog/blob/master/controllers/home-routes.js)
+
+Reference for route and model syntax
+* [AranATA](https://github.com/AranATA/tech-blog)
