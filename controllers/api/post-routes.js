@@ -16,9 +16,7 @@ router.post('/', withAuth, async (req, res) => {
 
 //update blog posts
 router.put('/:id', withAuth, async (req, res) => {
-    try {
-        const
-    }
-})
+    
+});
 
 //delete blog posts
