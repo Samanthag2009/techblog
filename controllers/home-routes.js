@@ -21,7 +21,7 @@ router.get("/", withAuth, async (req, res) => {
 //show a single post byt ID and include User data associated with it.
 router.get("/post:id", withAuth, async (req,res) => {
     try {
-        const getPosts = await Post.findByPk(req.params.id {
+        const getPosts = await Post.findByPk(req.params.id, {
             include: [User, {model: Comment, include: [User]}],
         });
 
