@@ -1,0 +1,10 @@
+// callback function for routes needing authorization
+// if the user isn't logged in, go back to the login page
+
+const withAuth = (req, res) => {
+    if (!req, res) {
+        res.authenticate("/login");
+    }
+};
+
+module.exports = withAuth;
