@@ -1,6 +1,6 @@
-# Project Title
+# Tech-Blog
 
-Simple overview of use/purpose.
+Have tech thoughts to share with the world? Check out the Tech Blog, which will serve as your personal blog to interact with others, post, comment, and let your voice be heard.
 
 ## Description
 
@@ -8,23 +8,35 @@ An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
 
+Though in its infancy, the Tech Blog version 1 has a backend that will go on to support a fully functional front end in version 2.  
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* bcrypt
+* sequelize
+* dotenv
+* express
+* express-handlebars
+* mysql2
+* nodemon
 
-### Installing
+### Victories
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+Working with the MVC format was a good experience, and felt familiar. In seeking direction with instructional videos and reverse-engineering similar projects, the Models, Controllers, and concepts behind Views felt familiar to work with.
 
-### Executing program
+### Challenges
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+Ultimately, the hard stop was in finding connection errors between database and servers. 
+CSS has also been a long-time challenge, but I have noticed steady improvement that will be implemented in version 2.
+
+### Next Steps
+
+In order to realize the full functionality of the app, the following will still need to be done:
+
+* fix connection errors
+* initialize database
+* finish public javascript and CSS styling
+* finish front-facing code for Views. 
+* serving the website on Heroku
 
 ## Help
 
@@ -35,22 +47,14 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Samantha Gosselin
+
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
@@ -60,7 +64,7 @@ Readme Template
 Tutorial for understanding session in node
 * [productioncoder](https://www.youtube.com/watch?v=bvQah0k5-eA&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2)
 
-Reference for route syntax
+Reference for syntax and alternate handling of routes and db
 * [jakekelly44](https://github.com/jakekelly44/tech-blog/blob/master/controllers/home-routes.js)
 
 Reference for route and model syntax
